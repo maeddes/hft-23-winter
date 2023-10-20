@@ -22,5 +22,6 @@
 - https://github.com/wagoodman/dive
 - https://docs.docker.com/engine/reference/builder/#cmd
 - https://docs.docker.com/engine/reference/builder/#entrypoint
+- https://github.com/docker/awesome-compose/
 
   
