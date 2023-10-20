@@ -15,10 +15,12 @@
 ### Questions
 
 - Is a docker Container capable of installing things through apt-get?
+- What happens with the data if you start and stop the Postgres container?hist
 
 ### Links
 
 - https://github.com/wagoodman/dive
 - https://docs.docker.com/engine/reference/builder/#cmd
 - https://docs.docker.com/engine/reference/builder/#entrypoint
+
   
