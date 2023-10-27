@@ -1,6 +1,12 @@
 # 2023-10-06 Cloud and Semester Introduction
 
+### Intro questions:
+
+* Which technologies or what do you have in mind in general if you think about "middleware" and "modern software architecture"?
+* the "WHY" - Why would people use and implement a distributed systems architecture?
+
 ![Brainstorm topics](pics/Intro_Overview.png)
+![Brainstorm topics](https://github.com/maeddes/hft-2021-winter/raw/main/images/middleware_sketch.png)
 
 ### Questions
 
