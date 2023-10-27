@@ -5,11 +5,17 @@
 * Which technologies or what do you have in mind in general if you think about "middleware" and "modern software architecture"?
 * the "WHY" - Why would people use and implement a distributed systems architecture?
 
-### Sketches
+## Sketches
+
+### Braindump
 
 ![Brainstorm topics](pics/Intro_Overview.png)
 
+### Vertical Middleware
+
 ![Brainstorm topics](https://github.com/maeddes/hft-2021-winter/raw/main/images/middleware_sketch.png)
+
+### Horizontal Middleware
 
 ![Brainstorm topics](https://github.com/maeddes/hft-2022-winter/blob/main/pics/middleware.png)
 
