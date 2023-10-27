@@ -54,4 +54,47 @@ cloud computing in own words and list examples for offerings, topologies and tec
 - https://docs.docker.com/engine/reference/builder/#entrypoint
 - https://github.com/docker/awesome-compose/
 
+# 2023-10-27 Introduction to Spring Boot
+
+* Background: Spring Framework - History & components
+* Spring ← → Spring Boot
+* Spring Initializr (start.spring.io) & starter dependencies
+* Basic project structure (folders, configuration ..)
+* "Hello, World!" example explained
+* Using Actuator
+
+### Objectives
+
+The student is able to build and configure an own Spring Boot application from scratch with the IDE of choice. The exercise is to build an own "Hello, World!" application that exposes various - endpoints and is able to execute CRUD operations on the state of the application. Optional: Add logging and testing, configure Actuator.
+
+### Exercises
+
+Basic setup:
+
+- Set up an own gitlab or github repository
+- Either set up an own local Java IDE or use gitpod.io
+
+Helpful Links:
+
+- https://github.com/
+- https://gitlab.com/
+- https://gitpod.io/
+- https://www.gitpod.io/docs/introduction/languages/java
+
+Application:
+
+- Build your own first Spring Boot Hello, World application at 
+- https://start.spring.io
+- Change name, Java version, build tool, dependencies. Observe changes
+- Use the following deps: Web, Actuator, DevTools
+- Annotate a class with @RestController and expose "some" Rest Mappings
+- Experiment with other Mappings, e.g. @GetMapping, @PostMapping
+- Pass a parameter via @PathVariable
+
+Helpful Links:
+
+- https://start.spring.io
+- https://www.baeldung.com/spring-requestmapping
+- https://spring.io/guides#getting-started-guides
+- Full tutorial (stuff for next weeks): https://www.baeldung.com/spring-boot-start
   
