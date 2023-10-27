@@ -29,6 +29,7 @@ cloud computing in own words and list examples for offerings, topologies and tec
 ### Student Questions
 
 - Would an nginx serve as a vertical or horizontal middleware component?
+- Is horizontal and vertical middleware same as horizontal and vertical scaling?
 
 ### Links
 
