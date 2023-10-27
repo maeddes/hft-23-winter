@@ -95,6 +95,5 @@ Helpful Links:
 
 - https://start.spring.io
 - https://www.baeldung.com/spring-requestmapping
-- https://spring.io/guides#getting-started-guides
-- Full tutorial (stuff for next weeks): https://www.baeldung.com/spring-boot-start
-  
+- https://www.baeldung.com/spring-boot-actuator-enable-endpoints
+
