@@ -30,6 +30,11 @@ cloud computing in own words and list examples for offerings, topologies and tec
 
 - Would an nginx serve as a vertical or horizontal middleware component?
 
+### Links
+
+- https://github.com/features/codespaces
+- https://www.gitpod.io/
+
 # 2023-10-13 Container Intro
 
 ![Intro Container](pics/Container_Intro.png)
