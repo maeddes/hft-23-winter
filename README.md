@@ -39,7 +39,7 @@ cloud computing in own words and list examples for offerings, topologies and tec
 ### Questions
 
 - Is a docker Container capable of installing things through apt-get?
-- What happens with the data if you start and stop the Postgres container?hist
+- What happens with the data if you start and stop the Postgres container?
 
 ### Links
 
