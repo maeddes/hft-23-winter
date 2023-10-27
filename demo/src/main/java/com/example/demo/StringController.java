@@ -16,7 +16,7 @@ public class StringController {
         return stringList;
     }
 
-    @GetMapping("/{string}"){
+    @GetMapping("/{string}")
     public String geString(@PathVariable String string){
 
         if(stringList.contains(string))
