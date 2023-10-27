@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @RestController
 @RequestMapping("/api/strings")
 public class StringController {
@@ -17,6 +16,15 @@ public class StringController {
         return stringList;
     }
 
+    @GetMapping("/{string}"){
+    public String geString(@PathVariable String string){
+
+        if(stringList.contains(string))
+            return string;
+        else return "";
+
+    }
+
     @PostMapping("/{newString}")
     public String createString(@PathVariable String newString) {
 
@@ -24,11 +32,25 @@ public class StringController {
             return "String "+newString+" added successfully";
     }
 
-    @DeleteMapping("/{oldString}")
-    public String deleteString(@PathVariable String oldString) {
+    @PutMapping("/{originalString}/{newString}")
+    public String updateString(
+            @PathVariable String originalString,
+            @PathVariable String newString
+    ) {
+        if (stringList.contains(originalString)) {
+            stringList.remove(originalString);
+            stringList.add(newString);
+            return "String " + originalString + " updated to " + newString;
+        } else {
+            return "String " + originalString + " not found for update";
+        }
+    }
+
+    @DeleteMapping("/{string}")
+    public String deleteString(@PathVariable String string) {
        
-            stringList.remove(oldString);
-            return "String "+oldString+" deleted successfully";
+            stringList.remove(string);
+            return "String "+string+" deleted successfully";
 
     }
 }
