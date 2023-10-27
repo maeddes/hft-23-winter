@@ -1,0 +1,33 @@
+    1  history
+    2  git pull
+    3  mkdir demo
+    4  cd demo
+    5  curl start.spring.io
+    6  curl https://start.spring.io
+    7  curl -G https://start.spring.io/starter.zip -d dependencies=web,actuator -d javaVersion=21 -d type=maven-rpoject -o demo.zip
+    8  ls
+    9  unzip demo.zip
+   10  ls
+   11  ls -ltr
+   12  rm demo.zip
+   13  curl -G https://start.spring.io/starter.zip -d dependencies=web,actuator -d javaVersion=21 -d type=maven-rpoject -o demo.zip
+   14  unzip demo.zip
+   15  curl -G https://start.spring.io/starter.zip -d dependencies=web,actuator -d javaVersion=21 -d type=maven-project -o demo.zip
+   16  ls
+   17  ls -ltr
+   18  unzip demo.zip 
+   19  mvn spring-boot:run
+   20  java --version
+   21  sdk install java
+   22  mvn spring-boot:run
+   23  mvn clean package
+   24  ls
+   25  cd target
+   26  ls -ltr
+   27  java -jar demo-0.0.1-SNAPSHOT.jar 
+   28* docker
+   29  mvn spring-boot:run
+   30  mvn clean package
+   31  ls target
+   32  history
+   33  history > history_2023_10_27_spring_docker
