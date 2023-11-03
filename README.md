@@ -105,3 +105,6 @@ Helpful Links:
 - https://www.baeldung.com/spring-requestmapping
 - https://www.baeldung.com/spring-boot-actuator-enable-endpoints
 
+# 2023-11-03 Deeper Dive into REST
+
+![REST, Controllers, Representations](pics/Container_Intro.png)
