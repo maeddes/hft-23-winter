@@ -1,2 +1,2 @@
 tasks:
-    - init: gradle build
+    - init: echo y|sdk install java
