@@ -107,4 +107,4 @@ Helpful Links:
 
 # 2023-11-03 Deeper Dive into REST
 
-![REST, Controllers, Representations](pics/Container_Intro.png)
+![REST, Controllers, Representations](pics/REST_stuff.png)
