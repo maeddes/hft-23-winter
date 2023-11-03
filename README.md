@@ -62,6 +62,8 @@ cloud computing in own words and list examples for offerings, topologies and tec
 
 # 2023-10-27 Introduction to Spring Boot
 
+![Spring Boot typical flow](https://raw.githubusercontent.com/maeddes/hft-2022-winter/main/pics/spring_boot_initializr_flow_2022_10_17.png)
+
 * Background: Spring Framework - History & components
 * Spring ← → Spring Boot
 * Spring Initializr (start.spring.io) & starter dependencies
