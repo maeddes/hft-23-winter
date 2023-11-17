@@ -1,0 +1,7 @@
+docker run -d \
+  --name my-postgres-container \
+  -e POSTGRES_DB=hftdb \
+  -e POSTGRES_USER=username \
+  -e POSTGRES_PASSWORD=password \
+  -p 5432:5432 \
+  postgres:latest
