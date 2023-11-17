@@ -119,3 +119,5 @@ Questions:
 - State(full/less)ness
 
 # 2023-11-17 Cloud-native recap / Intro to persistence
+
+![CAP Theorem, State](pics/CAP_Theorem_State.png)
