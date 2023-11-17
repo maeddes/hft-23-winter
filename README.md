@@ -98,6 +98,7 @@ Application:
 - Annotate a class with @RestController and expose "some" Rest Mappings
 - Experiment with other Mappings, e.g. @GetMapping, @PostMapping
 - Pass a parameter via @PathVariable
+- Put your application into a Docker container
 
 Helpful Links:
 
@@ -108,3 +109,13 @@ Helpful Links:
 # 2023-11-03 Deeper Dive into REST
 
 ![REST, Controllers, Representations](pics/REST_stuff.png)
+
+# 2023-11-10 Cloud-native Software development - Theory part
+
+Questions:
+
+- What is the advantage of polyglot applications? Why in particular for cloud-native software? What kind of disadvantages do you see?
+
+- State(full/less)ness
+
+# 2023-11-17 Cloud-native recap / Intro to persistence
