@@ -112,12 +112,34 @@ Helpful Links:
 
 # 2023-11-10 Cloud-native Software development - Theory part
 
-Questions:
+Theory lecture - Cloud-Native Software 
 
-- What is the advantage of polyglot applications? Why in particular for cloud-native software? What kind of disadvantages do you see?
+* CAP Theorem
+* Conway's Law
+* Fallacies of distributed computing
+* Domain-Driven Design basics
+* 12-factor application
+* Evolution of applications and deployments: Monolithic -> Service-Oriented Architecture -> Microservices
+* Introduction to serverless and FaaS terminology
 
-- State(full/less)ness
+### Objectives and exercises
+_The student knows about the evolution of distributed systems (and middleware) and the drivers towards state-of-the-art implementation and deployment. She/he can explain the underlying concepts and theories and put it into practical context. No dedicated exercises for this module. Recap of basics: Spring Boot, Docker, configuration, persistence and messaging._
+
+### Review questions
+
+* "WHY" Cloud-Native Software? What IS Cloud-Native Software?
+* Why "evolution" from a monolithic approach to a distributed approach?
+* How does the CAP Theorem/Conway's Law relate to this?
+* (NO Domain-Driven Design questions)
+* How do the 12-factor application "methodology" relate to the technologies that we covered in this semester? (important)
+* "WHY" is external configuration important in cloud-native software?
+* Where did you see aspects of external configuration in the technologies we used? Provide examples
+* What is the advantage of polyglot applications? Why in particular for cloud-native software? What kind of disadvantages do you see?
+
+
 
 # 2023-11-17 Cloud-native recap / Intro to persistence
 
 ![CAP Theorem, State](pics/CAP_Theorem_State.png)
+
+- State(full/less)ness
