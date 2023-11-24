@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String CRUD App</title>
+    <style>
+        /* Add some basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>String CRUD App</h1>
+
+    <!-- Form to add a new string -->
+    <form>
+        <label for="newString">Add a new string: </label>
+        <input type="text" id="newString" required>
+        <button id="addButton">Add</button>
+    </form>
+
+    <!-- List to display existing strings -->
+    <ul id="stringList"></ul>
+
+    <script>
+        // JavaScript code to interact with your API
+        const stringList = document.getElementById("stringList");
+        const newStringInput = document.getElementById("newString");
+        const addButton = document.getElementById("addButton");
+
+        const apiBaseUrl = "https://8090-maeddes-hft23winter-qe15pv1znw8.ws-eu105.gitpod.io";
+
+        // Function to display strings
+        function displayStrings() {
+            fetch(apiBaseUrl +"/api/strings")
+                .then((response) => response.json())
+                .then((data) => {
+                    stringList.innerHTML = ""; // Clear the list
+                    data.forEach((string) => {
+                        const li = document.createElement("li");
+                        li.textContent = string;
+                        const deleteButton = document.createElement("button");
+                        deleteButton.textContent = "Delete";
+                        deleteButton.addEventListener("click", () => deleteString(string));
+                        li.appendChild(deleteButton);
+                        stringList.appendChild(li);
+                    });
+                });
+        }
+
+        // Function to add a new string
+        addButton.addEventListener("click", () => {
+            const newString = newStringInput.value;
+            if (newString) {
+                fetch(apiBaseUrl +`/api/strings/${newString}`, { method: "POST" })
+                    .then(() => {
+                        newStringInput.value = "";
+                        displayStrings();
+                    });
+            }
+        });
+
+        // Function to delete a string
+        function deleteString(string) {
+            fetch(apiBaseUrl +`/api/strings/${string}`, { method: "DELETE" })
+                .then(() => displayStrings());
+        }
+
+        // Initial display of strings
+        displayStrings();
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+    1  history
+    2  git pull
+    3  mkdir demo
+    4  cd demo
+    5  curl start.spring.io
+    6  curl https://start.spring.io
+    7  curl -G https://start.spring.io/starter.zip -d dependencies=web,actuator -d javaVersion=21 -d type=maven-rpoject -o demo.zip
+    8  ls
+    9  unzip demo.zip
+   10  ls
+   11  ls -ltr
+   12  rm demo.zip
+   13  curl -G https://start.spring.io/starter.zip -d dependencies=web,actuator -d javaVersion=21 -d type=maven-rpoject -o demo.zip
+   14  unzip demo.zip
+   15  curl -G https://start.spring.io/starter.zip -d dependencies=web,actuator -d javaVersion=21 -d type=maven-project -o demo.zip
+   16  ls
+   17  ls -ltr
+   18  unzip demo.zip 
+   19  mvn spring-boot:run
+   20  java --version
+   21  sdk install java
+   22  mvn spring-boot:run
+   23  curl localhost:8080/api
+   24  curl localhost:8080/
+   25  curl -X POST localhost:8080/
+   26  curl localhost:8080/
+   27  curl -X POST localhost:8080/
+   28  curl localhost:8080/
+   29  curl -X POST localhost:8080/
+   30  curl localhost:8080/
+   31  mvn clean package
+   32  ls
+   33  cd target
+   34  ls -ltr
+   35  java -jar demo-0.0.1-SNAPSHOT.jar 
+   36  cd ..
+   37  ls
+   38  clear
+   39  cd demo
+   40  ls
+   41  cd ..
+   42  cd demo
+   43  ls
+   44  mvn dependency:tree
+   45  curl localhost:8080/
+   46  curl localhost:8090/
+   47  clear
+   48  curl localhost:8090
+   49  curl localhost:8090/api/strings
+   50  curl -X POST localhost:8090/api/strings/hello
+   51  curl localhost:8090/api/strings
+   52  curl -X POST localhost:8090/api/strings/one
+   53  curl -X POST localhost:8090/api/strings/otwo
+   54  curl -X POST localhost:8090/api/strings
+   55  curl -X POST localhost:8090/api/strings/three
+   56  curl -X DELETE localhost:8090/api/strings/two
+   57  curl -X DELETE localhost:8090/api/strings/otwo 
+   58  curl -X DELETE localhost:8090/api/strings/otwo
+   59  clear
+   60  curl -X POST localhost:8090/api/strings/one
+   61  curl -X POST localhost:8090/api/strings/two
+   62  curl -X POST localhost:8090/api/strings/twhree
+   63  curl -X DELETE localhost:8090/api/strings/twhree
+   64  docker build -t maeddes/hft-sample:v23
+   65  docker build -t maeddes/hft-sample:v23 .
+   66  mvn spring-boot:run
+   67  mvn clean package
+   68  ls target
+   69  docker images
+   70  docker run -d -p 8090:8090 maeddes/hft-sample:v23 
+   71  docker ps
+   72  docker logs 53v
+   73  docker logs 53b
+   74  docker login
+   75  docker push maeddes/hft-sample:v23
+   76  exit
+   77  exit
+   78  history
+   79  history > history_2023_10_27_spring_docker
+   80  git pull
+   81  git config pull.rebase false
+   82  git pull
+   83  mvn spring-boot:run
+   84  cd demo/
+   85  mvn spring-boot:run
+   86  history
+   87  history > history_2023_10_27_spring_docker
