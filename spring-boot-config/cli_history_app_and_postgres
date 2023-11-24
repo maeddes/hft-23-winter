@@ -1,0 +1,26 @@
+    1  cd spring-boot-config/
+    2  curl https://start.spring.io
+    3  curl -G https://start.spring.io/starter.zip -d dependencies=webcurl -G https://start.spring.io/starter.zip -d dependencies=web,actuator -d javaVersion=21 -d type=maven-project -o demo.zip
+    4  curl -G https://start.spring.io/starter.zip -d dependencies=web,actuator -d javaVersion=21 -d type=maven-project -o demo.zip 
+    5  ls
+    6  unzip demo.zip 
+    7  java --version
+    8  sdk install java
+    9  java --version
+   10  mvn spring-boot:run
+   11  export SERVER_PORT=8082
+   12  env
+   13  env | grep SERVER
+   14  mvn spring-boot:run
+   15  mvn -Dserver.port=8083 spring-boot:run
+   16  mvn clean install
+   17  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Djava.version=11 -Dspring.boot.version=2.5.5"
+   18  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Djaserver.port=8083"
+   19  mvn spring-boot:run -DjvmArguments="-Djaserver.port=8083"
+   20  java -jar target/demo-0.0.1-SNAPSHOT.jar --server.port=8083
+   21  SESERVER_PORT=8084 java -jar target/demo-0.0.1-SNAPSHOT.jar --server.port=8083
+   22  mvn spring-boot:run
+   23  docker run -d   --name my_postgres_container   -p 5432:5432   -e POSTGRES_DB=hftdb   -e POSTGRES_USER=username   -e POSTGRES_PASSWORD=password   postgres:latest
+   24  mvn spring-boot:run
+   25  history
+   26  history > cli_history_app_and_postgres
