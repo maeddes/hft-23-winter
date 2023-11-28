@@ -117,7 +117,7 @@ Theory lecture - Cloud-Native Software
 * CAP Theorem
 * Conway's Law
 * Fallacies of distributed computing
-* Domain-Driven Design basics
+* Domain-Driven Design basics (not relevant for exam)
 * 12-factor application
 * Evolution of applications and deployments: Monolithic -> Service-Oriented Architecture -> Microservices
 * Introduction to serverless and FaaS terminology
@@ -136,10 +136,26 @@ _The student knows about the evolution of distributed systems (and middleware) a
 * Where did you see aspects of external configuration in the technologies we used? Provide examples
 * What is the advantage of polyglot applications? Why in particular for cloud-native software? What kind of disadvantages do you see?
 
-
-
 # 2023-11-17 Cloud-native recap / Intro to persistence
 
 ![CAP Theorem, State](pics/CAP_Theorem_State.png)
 
 - State(full/less)ness
+
+# 2023-11-24 Recap of the 12-factor
+
+### Review questions
+
+* Why is it a bad idea to have configuration properties as constants in your code?
+Answers: Security issue with credentials, Can't stage because of strong dependency to one certain environment
+* Why did this become a lot more important when moving from traditional to cloud-native applications
+Answers: Applications have more frequent changes and scale. The demand to update configuration is much higher
+
+* Where did you see aspects of factor 3 "external configuration" in the technologies we have dealt with?
+Docker: "docker run -e ENVIRONMENT VARIABLES" or "docker run -env-file ENV_FILE", docker compose tbd, volumes tbd
+Spring Boot: pom.xml declared dependencies externally, application.properties/application.yaml, environment variables
+
+* Where did we see aspects of factor 1 "Codebase": git*
+* Where did we see aspects of factor 2 "External Dependencies" : maven, gradle, npm
+* Where did we see aspects of factor 4 "Backing Services": Spring Data (Hibernate/JPA)
+
