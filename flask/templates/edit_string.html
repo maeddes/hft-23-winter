@@ -1,0 +1,18 @@
+<!-- edit_string.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit String</title>
+</head>
+<body>
+    <h2>Edit String</h2>
+    <form method="post" action="">
+        <label for="newString">New String:</label>
+        <input type="text" id="newString" name="newString" value="{{ string }}" required>
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="{{ url_for('index') }}">Cancel</a>
+</body>
+</html>
