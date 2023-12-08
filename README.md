@@ -110,6 +110,35 @@ Helpful Links:
 
 ![REST, Controllers, Representations](pics/REST_stuff.png)
 
+* Synchronous communication
+* HTTP and REST
+* Verbs, Resources, Nouns
+* Evolution, Richardson Maturity Model
+* CRUD Operations
+* Building a REST API with Spring (Boot)
+* Building a data model with REST
+
+Links:
+
+* https://restfulapi.net/idempotent-rest-apis/
+* https://restfulapi.net/richardson-maturity-model/
+* https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+* https://www.baeldung.com/spring-requestmapping
+* https://www.baeldung.com/spring-request-response-body
+* https://www.baeldung.com/spring-rest-openapi-documentation
+* https://www.baeldung.com/spring-cors
+
+### Review questions
+
+* Identify good and bad API examples and explain why
+* Describe the concepts of Verbs and Nouns
+* When is an invocation idempotent and safe? What does it mean? Provide examples
+* Describe in your own words the mapping of REST calls to database (SQL) and CRUD calls
+
+### Objectives and exercises
+_The student understands the concepts of an API and synchronous communication in distributed systems and can explain it in own words._
+
 # 2023-11-10 Cloud-native Software development - Theory part
 
 Theory lecture - Cloud-Native Software 
