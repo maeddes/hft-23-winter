@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 @RestController
-@RequestMapping("/api/jpa")
+@RequestMapping("/api/strings")
 @CrossOrigin(origins = "*") // DON'T DO THIS :-)
 public class JPAController {
 
@@ -39,16 +39,22 @@ public class JPAController {
         @ApiResponse(responseCode = "404", description = "Not Found")
     })
     @GetMapping
-    public ResponseEntity<List<StringEntity>> getAllStrings() {
+    public ResponseEntity<List<String>> getAllStrings() {
 
         List<StringEntity> stringList = stringRepository.findAll();
+        List<String> returnList = new ArrayList<>();
 
         if (stringList.isEmpty()) {
             // Return a "Not Found" response (HTTP 404) when the list is empty.
             return ResponseEntity.notFound().build();
         } else {
             // Return the list of strings with a "OK" response (HTTP 200).
-            return ResponseEntity.ok(stringList);
+
+            returnList = stringList.stream()
+                .map(StringEntity::getContent)
+                .toList();
+                
+            return ResponseEntity.ok(returnList);
         }
     }
 

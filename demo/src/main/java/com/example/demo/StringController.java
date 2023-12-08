@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 @RestController
-@RequestMapping("/api/strings")
+@RequestMapping("/api/old/strings")
 @CrossOrigin(origins = "*") // DON'T DO THIS :-)
 public class StringController {
 
