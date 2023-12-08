@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the JAR file (change the JAR filename as needed)
 COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
 # Expose the port that your Spring Boot application is running on (default is 8080)
-EXPOSE 8080
+EXPOSE 8090
 
 # Define the command to run your Spring Boot application
 CMD ["java", "-jar", "app.jar"]

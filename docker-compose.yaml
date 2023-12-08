@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  spring-backend:
+    image: springbackend:v0.1
+    ports:
+      - "8090:8090"
+    depends_on:
+      - postgres
+    environment:
+      SERVER_PORT: 8090
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/hftdb  # Updated to use the hostname 'postgres' instead of 'localhost'
+      SPRING_DATASOURCE_USERNAME: username
+      SPRING_DATASOURCE_PASSWORD: password
+    networks:
+      - hftnet
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: hftdb
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    networks:
+      - hftnet
+
+  flask-frontend:
+    image: flaskfrontend:v0.1
+    ports:
+      - "5000:5000"
+    environment:
+      API_BASE_URL: http://spring-backend:8090  # Update with the actual URL of your Spring Boot app
+    depends_on:
+      - spring-backend
+    networks:
+      - hftnet
+
+networks:
+  hftnet:  # Define the existing network
+    external: true  # Specify
