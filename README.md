@@ -71,6 +71,18 @@ _The student understands the concepts and use cases of container technology and 
 - Is a docker Container capable of installing things through apt-get?
 - What happens with the data if you start and stop the Postgres container?
 
+### Review questions
+
+* "WHY" Containers? List advantages/disadvantages ..
+* What is the difference between a container and a VM? List 3 criteria
+* Which technologies led to the evolution of docker (and why)? 
+* What is the difference between a docker daemon and the docker hub? 
+* What is the difference between docker run, docker pull and docker start?
+* Which command transitions from a container instance to an image?
+* What are the Docker components and describe them? (Rephrase!)
+* What does docker exec do? Provide a pseudo-code example and explain what it does 
+* Explain the container latest tag
+
 ### Links
 
 - https://github.com/wagoodman/dive
