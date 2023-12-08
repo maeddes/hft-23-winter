@@ -46,6 +46,24 @@ cloud computing in own words and list examples for offerings, topologies and tec
 
 ![Intro Container](pics/Container_Intro.png)
 
+* What are containers and how do they work?
+* Containers vs. VMs
+* History of containers and rise of Docker
+* Docker concepts: daemon, hub, dockerfile, CLI
+* Running containers with various options
+
+### Objectives
+
+_The student understands the concepts and use cases of container technology and is able to describe them. The first exercise is to pull sample images from an image registry (e.g. Docker Hub) and interact with them (run, expose port, execute shell, cleanup etc). After that the student can show how to build a custom image via Dockerfile and push it to a registry for others to access. Complete the exercises handed out via URL._
+
+### Exercises/Lab task
+
+* Create or get yourself a Docker Id (https://www.docker.com)
+* Get a github or gitlab id. A public one, please :-)
+* Do the container lab given at: https://hsexd.new.trainings.nvtc.io/ (up until Networks)
+* Create a docker-compose file to start all 3 containers in the exercise
+* Optional: Externalize
+
 # 2023-10-20 Container Labs
 
 ### Questions
