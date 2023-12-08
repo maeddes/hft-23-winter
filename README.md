@@ -62,7 +62,7 @@ _The student understands the concepts and use cases of container technology and 
 * Get a github or gitlab id. A public one, please :-)
 * Do the container lab given at: https://hsexd.new.trainings.nvtc.io/ (up until Networks)
 * Create a docker-compose file to start all 3 containers in the exercise
-* Optional: Externalize
+* Optional: Externalize storage part of the database
 
 # 2023-10-20 Container Labs
 
