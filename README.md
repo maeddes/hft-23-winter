@@ -219,3 +219,8 @@ Spring Boot: pom.xml declared dependencies externally, application.properties/ap
 * Where did we see aspects of factor 2 "External Dependencies" : maven, gradle, npm
 * Where did we see aspects of factor 4 "Backing Services": Spring Data (Hibernate/JPA)
 
+# 2023-12-01 No lecture - project week
+
+# 2023-12-08 Code review
+
+# 2023-12-15 Introduction to observability with OpenTelemetry
