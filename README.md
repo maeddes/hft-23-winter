@@ -236,5 +236,19 @@ Spring Boot: pom.xml declared dependencies externally, application.properties/ap
 ![multi docker compose](pics/Multiple_Docker_Compose.png)
 
 # 2023-12-15 Introduction to observability with OpenTelemetry
+
+* Why is there a need for monitoring and observability?
+* Concept of distributed tracing - What is a trace? What is a span?
+* OpenTelemetry as Open Source solution to address this problem
+* Different ways of implementation: "Automatic" vs "Programmatic"
+* Jaeger as technology to visualize distributed traces
+
+### Objectives and exercises
+
+The student is able to explain why observability is important and what the challenges of modern software (e.g. polyglot, distributed microservices) are. The student is able to use OpenTelemetry with auto-configuration to monitor an application, as well as configuring the agent to send the data to a collector. The student is able to read and describe a distributed trace in e.g. Jaeger.
+
+### Basic OpenTelemetry concept
 ![OpenTelemetry basics](pics/Otel_basic.png)
+
+### Alternatives for collection and visualization
 ![OpenTelemetry collection alternatives](pics/Open_Telemetry_Alternatives.png)
