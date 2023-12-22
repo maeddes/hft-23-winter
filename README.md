@@ -235,6 +235,10 @@ Spring Boot: pom.xml declared dependencies externally, application.properties/ap
 ### Multiple docker compose files with shared network
 ![multi docker compose](pics/Multiple_Docker_Compose.png)
 
+###Review questions
+* What is the limitation of dependson in a docker compose?
+* Why is the waiting service still able to call the other one too early?
+
 # 2023-12-15 Introduction to observability with OpenTelemetry
 
 * Why is there a need for monitoring and observability?
@@ -252,3 +256,19 @@ The student is able to explain why observability is important and what the chall
 
 ### Alternatives for collection and visualization
 ![OpenTelemetry collection alternatives](pics/Open_Telemetry_Alternatives.png)
+
+# 2023-12-22 Semester Recap and Lab Reviews
+
+![Cloud-Native Example with Reverse Proxy](pics/Nginx_Reverse_Proxy.png)
+
+* Multi-Stage Dockerfile
+* Docker Compose Healthchecks
+* nginx Reverse Proxy
+
+### Links:
+
+* https://phoenixnap.com/kb/nc-command
+* https://12factor.net/dev-prod-parity
+* https://github.com/dart-lang/dart-docker/issues/58
+* https://github.dev/maeddes/options-galore-container-build
+* https://docs.docker.com/compose/compose-file/05-services/#healthcheck
