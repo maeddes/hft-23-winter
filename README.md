@@ -202,7 +202,13 @@ _The student knows about the evolution of distributed systems (and middleware) a
 
 - State(full/less)ness
 
-# 2023-11-24 Recap of the 12-factor
+# 2023-11-24 Recap of the 12-factor / Docker Advanced
+
+### 12-factor Recap
+![12factor](pics/HfT_12_factor_DB.png)
+
+### "docker run" vs "docker compose"
+![run vs compose](pics/docker_run_vs_compose.excalidraw.png)
 
 ### Review questions
 
@@ -223,4 +229,12 @@ Spring Boot: pom.xml declared dependencies externally, application.properties/ap
 
 # 2023-12-08 Code review
 
+### Client-side JavaScript "problem"
+![client vs server side](pics/JS_UI_Problems.png)
+
+### Multiple docker compose files with shared network
+![multi docker compose](pics/Multiple_Docker_Compose.png)
+
 # 2023-12-15 Introduction to observability with OpenTelemetry
+![OpenTelemetry basics](pics/Otel_basic.png)
+![OpenTelemetry collection alternatives](pics/Open_Telemetry_Alternatives.png)
