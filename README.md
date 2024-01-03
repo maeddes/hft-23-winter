@@ -262,8 +262,70 @@ The student is able to explain why observability is important and what the chall
 ![Cloud-Native Example with Reverse Proxy](pics/Nginx_Reverse_Proxy.png)
 
 * Multi-Stage Dockerfile
+
+```
+FROM maven:3-eclipse-temurin-21 AS build
+RUN mkdir -p /opt/app/src
+WORKDIR /opt/app
+COPY src /opt/app/src
+COPY pom.xml /opt/app
+RUN mvn clean package -DskipTests
+
+FROM eclipse-temurin:21-jre
+RUN mkdir -p /opt/app
+COPY --from=build /opt/app/target/demo-0.0.1-SNAPSHOT.jar /opt/app.jar
+EXPOSE 8090
+CMD ["java","-jar","/opt/app.jar"]
+```
+
 * Docker Compose Healthchecks
+
+```
+  backend:
+    build: ./backend
+    ports:
+      - '8090:8080'
+    networks:
+      - comiclib-network
+    depends_on:
+      - database
+    healthcheck: 
+      test: "nc -v -z localhost 8080" # healthcheck is executed IN the container and NOT on the container daemon!
+      interval: 2s
+      timeout: 10s
+      retries: 10
+      start_period: 4s
+      start_interval: 5s
+```
+
 * nginx Reverse Proxy
+
+```
+  http {
+    sendfile on;
+    upstream admin-frontend {
+        server admin-frontend;
+    }
+    upstream backend {
+        server backend:8080;
+    }
+    upstream mongo-express {
+        server mongo-express:8081;
+    }
+    server {
+        listen 80;
+        location /api {
+            proxy_pass http://backend;
+        }
+        location / {
+            proxy_pass http://admin-frontend;
+        }
+        location /express {
+            proxy_pass http://mongo-express;
+        }
+    }
+  }
+```
 
 ### Links:
 
