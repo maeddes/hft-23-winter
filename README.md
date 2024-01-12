@@ -212,6 +212,12 @@ _The student knows about the evolution of distributed systems (and middleware) a
 
 - State(full/less)ness
 
+### Review question
+
+- "WHY" should you not keep the state in memory, but persist it to a "storage backend"
+
+### Example Spring Data JPA
+
 * Spring Data
 * Concept of entities and repositories
 * JPA and JDBC basics
@@ -221,12 +227,13 @@ _The student knows about the evolution of distributed systems (and middleware) a
 ![Spring Data Components](https://github.com/maeddes/hft-2022-winter/blob/main/pics/spring_data_overview.png)
 
 ### Objectives and exercises
-_The student is able to build a Spring Boot application (or extend an existing one) with Spring Data configuration. The exercise is to create an application, which performs CRUD operations on a database backend. The database can either be in-memory (H2) or a (containerized) PostgreSQL. Optional: Provide a docker-compose file to stand up a multi-container environment with application and database._
+_The student is able to build a Spring Boot application (or extend an existing one) with Spring Data configuration. The exercise is to create an application, which performs CRUD operations on a database backend. The database can either be in-memory (H2) or a (containerized) PostgreSQL or whatever you like. Provide a docker-compose file to stand up a multi-container environment with application and database._
 
 ### Review Questions
 
-* "WHY" persistence? "WHY" persistence frameworks like JPA?
-* Describe the necessary components to build an application with Spring Data? Potentially sketch
+* "WHY" persistence? "WHY" should you not keep the state in memory, but persist it to a "storage backend"
+* "WHY" persistence frameworks like JPA?
+* Describe the necessary components to build an application with Spring Data or any programming language framework of your choice? Potentially sketch
 * What does the annotation @Entity do? 
 * How could docker compose help if you have a persistence-based application?
 
