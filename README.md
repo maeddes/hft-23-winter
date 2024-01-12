@@ -379,5 +379,5 @@ CMD ["java","-jar","/opt/app.jar"]
 ### Contents
 
 * Spring Boot Recap
-** Advantages
-** Initializr & Dependencies
+  - Advantages
+  - Initializr & Dependencies
