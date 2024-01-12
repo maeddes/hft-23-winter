@@ -369,3 +369,15 @@ CMD ["java","-jar","/opt/app.jar"]
 * https://github.com/dart-lang/dart-docker/issues/58
 * https://github.dev/maeddes/options-galore-container-build
 * https://docs.docker.com/compose/compose-file/05-services/#healthcheck
+
+# 2024-01-12 Semester Recap I
+
+### Student questions:
+- Or should I also know the ins and outs of spring boot and app dev for example?
+
+
+### Contents
+
+* Spring Boot Recap
+** Advantages
+** Initializr & Dependencies
