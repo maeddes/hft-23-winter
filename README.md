@@ -113,7 +113,15 @@ Basic setup:
 - Set up an own gitlab or github repository
 - Either set up an own local Java IDE or use gitpod.io
 
-Helpful Links:
+### Review questions
+
+* "WHY Spring Boot?" Provide 3 advantages of this framework
+* Describe Spring Boot to somebody not familiar with it in own words ()
+* How do you start building a Spring Boot app? Initializr & Dependencies
+* List 4 different starter dependencies and explain briefly what they do (old question) (4P)
+"I did not do my lab task with Spring Boot. I implemented using Python and I can tell you how it works there ..."
+
+### Helpful Links:
 
 - https://github.com/
 - https://gitlab.com/
