@@ -380,6 +380,17 @@ CMD ["java","-jar","/opt/app.jar"]
 
 ### Contents
 
+* Conceptual & mostly theoretical "things"
+  - Cloud Definition - Ability to describe, explain and correlate to real-world technologies/implementations
+  - Cloud Abstraction Layers
+  - Slide Deck - additional definitions not relevant
+  - CAP Theorem
+  - Conway's Law
+  - DDD not relevant
+  - Fallacies of Distributed Computing / "Disadvantages/Problems with cloud-native software"
+  - 12 factor apps - probably most important concept
+  - FaaS part not relevant
+
 * Spring Boot Recap
   - Advantages
   - Initializr & Dependencies
@@ -397,15 +408,6 @@ CMD ["java","-jar","/opt/app.jar"]
   - everything as described in the corresponding section of this document
 * Observability
   - everything as described in the corresponding section of this document
-* Conceptual & mostly theoretical "things"
-  - Cloud Definition - Ability to describe, explain and correlate to real-world technologies/implementations
-  - Cloud Abstraction Layers
-  - Slide Deck - additional definitions not relevant
-  - CAP Theorem
-  - Conway's Law
-  - DDD not relevant
-  - Fallacies of Distributed Computing / "Disadvantages/Problems with cloud-native software"
-  - 12 factor apps - probably most important concept
-  - FaaS part not relevant
+
 
 
