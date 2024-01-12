@@ -373,11 +373,39 @@ CMD ["java","-jar","/opt/app.jar"]
 # 2024-01-12 Semester Recap I
 
 ### Student questions:
-- Or should I also know the ins and outs of spring boot and app dev for example?
-
+- Or should I also know the ins and outs of spring boot and app dev for example? See below.
+- Since you also said that the cheatsheet should not be very useful, it is not allowed to take one, right? WRONG, you are allowed for a 2 sided handwritten cheatsheet
+- Do we have to write any kind of code in the exam? The majority of code-specific questions will be in a review/analysis kind of way. In case of "writing code" questions there will be always the disclaimer that pseudo-code is fine.
+- Are we allowed to use a “digitaly handwritten” cheat sheet - Format DIN A4 max :-) (example: write it with an iPad with Apple Pencil) and print the handwritten sheet for the exam? Yes, but no copies! Cheatsheets must be added to the exam! I will deduct points for violations.
 
 ### Contents
 
 * Spring Boot Recap
   - Advantages
   - Initializr & Dependencies
+  - Overview Spring Data JPA
+  - Updated objectives in specific sections of this README
+  - Important Update: Equivalent answers for other used programming languages are also valid
+* Containers
+  - know the ins and outs of container technology :-)
+  - know the artefacts of a typical container environment and how they interact
+  - know the CLI API with central components -> containers, images, networks & volumes
+  - Dockerfiles simple & multistage
+  - docker compose including healthchecks and all things above
+  - open? limitations of containers
+* API
+  - everything as described in the corresponding section of this document
+* Observability
+  - everything as described in the corresponding section of this document
+* Conceptual & mostly theoretical "things"
+  - Cloud Definition - Ability to describe, explain and correlate to real-world technologies/implementations
+  - Cloud Abstraction Layers
+  - Slide Deck - additional definitions not relevant
+  - CAP Theorem
+  - Conway's Law
+  - DDD not relevant
+  - Fallacies of Distributed Computing / "Disadvantages/Problems with cloud-native software"
+  - 12 factor apps - probably most important concept
+  - FaaS part not relevant
+
+
