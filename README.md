@@ -206,9 +206,29 @@ _The student knows about the evolution of distributed systems (and middleware) a
 
 # 2023-11-17 Cloud-native recap / Intro to persistence
 
+### Revision of CAP Theorem
+
 ![CAP Theorem, State](pics/CAP_Theorem_State.png)
 
 - State(full/less)ness
+
+* Spring Data
+* Concept of entities and repositories
+* JPA and JDBC basics
+* H2, PostgeSQL, MySQL - configuration via Spring Boot profiles
+* Running databases as Docker images
+
+![Spring Data Components](https://github.com/maeddes/hft-2022-winter/blob/main/pics/spring_data_overview.png)
+
+### Objectives and exercises
+_The student is able to build a Spring Boot application (or extend an existing one) with Spring Data configuration. The exercise is to create an application, which performs CRUD operations on a database backend. The database can either be in-memory (H2) or a (containerized) PostgreSQL. Optional: Provide a docker-compose file to stand up a multi-container environment with application and database._
+
+### Review Questions
+
+* "WHY" persistence? "WHY" persistence frameworks like JPA?
+* Describe the necessary components to build an application with Spring Data? Potentially sketch
+* What does the annotation @Entity do? 
+* How could docker compose help if you have a persistence-based application?
 
 # 2023-11-24 Recap of the 12-factor / Docker Advanced
 
