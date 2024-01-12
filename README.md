@@ -243,7 +243,7 @@ _The student is able to build a Spring Boot application (or extend an existing o
 # 2023-11-24 Recap of the 12-factor / Docker Advanced
 
 ### 12-factor Recap
-![12factor](pics/HfT_12_factor_DB.png)
+![12factor](pics/12_factor_DB.png)
 
 ### "docker run" vs "docker compose"
 ![run vs compose](pics/docker_run_vs_compose.excalidraw.png)
