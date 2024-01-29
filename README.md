@@ -38,6 +38,8 @@ cloud computing in own words and list examples for offerings, topologies and tec
 
 ![Horizontal vs. Vertical](pics/horizontalvsverticalmiddleware.png)
 
+# NOTE: The above image is wrong. Please exchange horizontal and vertical :-)
+
 - Is horizontal and vertical middleware same as horizontal and vertical scaling?
 
 ### Links
